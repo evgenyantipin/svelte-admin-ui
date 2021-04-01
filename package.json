@@ -9,9 +9,9 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-node": "next",
-		"@sveltejs/kit": "next",
-		"svelte": "^3.29.0",
+		"@sveltejs/adapter-node": "1.0.0-next.11",
+		"@sveltejs/kit": "1.0.0-next.65",
+		"svelte": "^3.37.0",
 		"vite": "^2.1.0",
 		"typescript": "^4.0.0",
 		"tslib": "^2.0.0",
