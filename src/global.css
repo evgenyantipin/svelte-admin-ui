@@ -6,6 +6,8 @@
 @layer base {
 	h1 {
 		@apply text-2xl;
+		@apply border-b-2;
+		@apply mb-2;
 	}
 	h2 {
 		@apply text-xl;
