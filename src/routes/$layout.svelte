@@ -7,9 +7,11 @@
 
 <div id="app" class="h-screen flex flex-col overflow-hidden">
 	<!-- Fixed top nav -->
-	<nav class="h-16 flex flex-none items-center justify-between flex-wrap bg-gray-400">
-		<div class="flex-0 w-40 sm:w-64 h-16 bg-red-600 p-3 self-center h-full text-xl font-mono"><span class="inline-block align-middle">test-system</span></div>
-		<div class="flex-grow p-3">Heading</div>
+	<nav class="h-16 flex flex-none items-center justify-center bg-gray-400">
+		<div class="flex-0 flex items-center w-40 h-full sm:w-64 bg-red-600 text-xl">
+			<div class="p-2">test-system</div>
+		</div>
+		<div class="flex-grow p-2 text-xl">Heading</div>
 		<div class="flex-0 p-3 bg-green-500 mr-3 rounded">Test</div>
 	</nav>
 	<!-- Main content -->
@@ -30,24 +32,3 @@
 	</div>
   
   </div>
-
-  <!--
-
-<div class="h-16 w-screen bg-blue-600 fixed z-10">
-	<div class="flex flex-row">
-	</div>
-</div>
-
-<div class="flex flex-row relative">
-	<div class="flex-0 w-32 bg-red-300 overflow-scroll fixed h-full">
-		<div class="h-16"></div>
-		<Menu/>
-	</div>
-	<div class="flex-grow overflow-scroll fixed left-32">
-		<div class="h-16"></div>
-		<slot />
-	</div>
-		
-</div>
-  -->
-
