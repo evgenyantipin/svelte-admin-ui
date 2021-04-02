@@ -1,4 +1,5 @@
 const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
+const colors = require('tailwindcss/colors');
 
 module.exports = {
 	purge: {
@@ -16,7 +17,24 @@ module.exports = {
 		},
 	},
 	theme: {
-		extend: {},
+		colors: {
+			transparent: 'transparent',
+			current: 'currentColor',
+			primary: {
+				light: colors.indigo[200],
+			},
+			secondary: {
+				light: colors.red[200],
+			},
+			black: colors.black,
+			white: colors.white,
+			gray: colors.trueGray,
+			indigo: colors.indigo,
+			red: colors.rose,
+			yellow: colors.amber,
+		},
+		extend: {
+		},
 	},
 	variants: {
 		extend: {},

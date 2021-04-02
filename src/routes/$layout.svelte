@@ -7,7 +7,7 @@
 
 <div id="app" class="h-screen flex flex-col overflow-hidden">
 	<!-- Fixed top nav -->
-	<nav class="h-16 flex flex-none items-center justify-center bg-gray-400">
+	<nav class="h-16 flex flex-none items-center justify-center bg-primary-light">
 		<div class="flex-0 flex items-center w-40 h-full sm:w-64 bg-red-600 text-xl">
 			<div class="p-2">test-system</div>
 		</div>
