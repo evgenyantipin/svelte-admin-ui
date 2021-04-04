@@ -14,11 +14,6 @@
             item.mass = parseInt(item.mass)
             item.id = item.url.split('/')[5]
         })
-        return {
-            props: {
-                items
-            }
-        }
     })
 
 </script>

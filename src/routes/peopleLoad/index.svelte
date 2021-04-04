@@ -1,6 +1,6 @@
 <script lang="ts" context="module">
-    export async function load({fetch}) {
-        const resp = await fetch('https://swapi.dev/api/people')
+    async function getItems(page = 1) {
+        const resp = await fetch(`https://swapi.dev/api/people/?page=${page}`)
         const data = await resp.json()
         const items = data.results
         items.forEach( item => {
@@ -8,9 +8,13 @@
             item.mass = parseInt(item.mass)
             item.id = item.url.split('/')[5]
         })
+        return items
+    }
+
+    export async function load() {
         return {
             props: {
-                items
+                items: await getItems()
             }
         }
     }
@@ -21,6 +25,8 @@
     import { goto } from '$app/navigation'
 
     export let items=[]
+
+    setTimeout( async () => { items = await getItems(2)}, 5000 )
 </script>
   
 <h1>People (load)</h1>
