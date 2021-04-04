@@ -8,7 +8,7 @@
 <ul>
     <li class:active={$page.path==='/'}><a href="/">Index</a></li>
     <li class:active={$page.path==='/colors'}><a href="/colors">Colors</a></li>
-    <li class:active={$page.path==='/people'}><a href="/people">People</a></li>
+    <li class:active={$page.path.startsWith( '/people')}><a href="/people">People</a></li>
     <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
     <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
     <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
