@@ -1,18 +1,15 @@
-<script lang="ts" context="module">
-    export async function load({page, fetch}) {
-        console.log('load')
-        const resp = await fetch(`https://swapi.dev/api/people/${page.params.id}/`)
-        const item = await resp.json()
-        return {
-            props: {
-                item
-            }
-        }
-    }
-</script>
-
 <script lang="ts">
-    export let item: any = {};
+    import {onMount} from 'svelte'
+    import { page } from '$app/stores'
+
+    let item: any = {};
+
+    onMount( async () =>  {
+        const resp = await fetch(`https://swapi.dev/api/people/${$page.params.id}/`)
+        console.log(resp)
+        item = await resp.json()
+    })
+
 </script>
 
 <h1>{item.name}</h1>
