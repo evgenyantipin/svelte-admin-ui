@@ -1,6 +1,9 @@
 <script>
 	import "../global.css";
 	import Menu from "$lib/Menu.svelte";
+
+	import {navigating} from '$app/stores'
+
 // https://stackoverflow.com/questions/57671255/keeping-one-column-fixed-while-th-other-scrolls
 // https://jsfiddle.net/JHeth/d8vj6ncg/19/
 </script>
@@ -11,7 +14,7 @@
 		<div class="flex-0 flex items-center w-40 h-full sm:w-64 bg-primary-light text-xl">
 			<div class="p-2">test-system</div>
 		</div>
-		<div class="flex-grow p-2 text-xl">Heading</div>
+		<div class="flex-grow p-2 text-xl">{$navigating ? 'loading' : 'ready'}</div>
 		<div class="flex-0 p-3 bg-green-500 mr-3 rounded">Test</div>
 	</nav>
 	<div class="flex-1 flex overflow-hidden">
