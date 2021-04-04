@@ -4,19 +4,19 @@
     let currPage;
 </script>
 
-<h2>Menu</h2>
+<div class="">Test pages</div>
 <ul>
-    <li><a class:active={$page.path==='/'} href="/">Index</a></li>
-    <li><a class:active={$page.path==='/colors'} href="/colors">Colors</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
-    <li><a class:active={$page.path==='/test'} href="/test">Test</a></li>
+    <li class:active={$page.path==='/'}><a href="/">Index</a></li>
+    <li class:active={$page.path==='/colors'}><a href="/colors">Colors</a></li>
+    <li class:active={$page.path==='/people'}><a href="/people">People</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
+    <li class:active={$page.path==='/test'}><a href="/test">Test</a></li>
     
 </ul>
 
@@ -25,7 +25,10 @@
 </p>
 
 <style lang="scss">
+    li {
+        @apply pl-2;
+    }
     .active {
-        background-color: green;
+        @apply bg-primary-light
     }
 </style>
