@@ -1,22 +1,29 @@
-<script lang="ts">
-  import TableSort from '$lib/TableSort.svelte'
-  import {onMount} from 'svelte'
-  import { goto } from '$app/navigation'
-
-  let items = []
-
-    onMount( async () => {
+<script lang="ts" context="module">
+    export async function load({fetch}) {
         const resp = await fetch('https://swapi.dev/api/people')
         const data = await resp.json()
-        items = data.results
+        const items = data.results
         items.forEach( item => {
             item.height = parseInt(item.height)
             item.mass = parseInt(item.mass)
             item.id = item.url.split('/')[5]
         })
-    })
-
+        return {
+            props: {
+                items
+            }
+        }
+    }
 </script>
+
+<script lang="ts">
+    import TableSort from '$lib/TableSort.svelte'
+    import {onMount} from 'svelte'
+    import { goto } from '$app/navigation'
+
+    export let items=[]
+</script>
+  
 <h1>People</h1>
 <div class="bg-white rounded p-3">
 <TableSort class="min-w-full" {items}>
