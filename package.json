@@ -39,7 +39,6 @@
 		"node": ">= 12.17.0"
 	},
 	"dependencies": {
-		"@fortawesome/free-solid-svg-icons": "^5.15.3",
-		"svelte-tablesort": "^1.1.0"
+		"@fortawesome/free-solid-svg-icons": "^5.15.3"
 	}
 }
