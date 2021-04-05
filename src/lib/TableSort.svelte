@@ -9,7 +9,7 @@
         sortFunction,
         compareStrings,
         compareNumbers,
-    } from 'generator-sort'
+    } from './generator-sort'
     export let items
     let className = ''
     export { className as class }
