@@ -1,3 +1,6 @@
+// See https://github.com/sveltejs/kit/issues/885 for possible solution for using
+// modules from npm
+
 type CompareResult = number;
 type CompareFunction<T> = (a: T, b: T) => CompareResult;
 
