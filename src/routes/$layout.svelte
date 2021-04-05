@@ -1,6 +1,6 @@
 <script>
 	import "../global.css";
-	import Menu from "$lib/Menu.svelte";
+	import MainMenu from "$lib/MainMenu/MainMenu.svelte";
 
 	import {navigating} from '$app/stores'
 
@@ -21,7 +21,7 @@
 		<!-- Sidebar -->
 		<div class="flex-0 flex bg-gray-100">
 			<div class="flex-1 overflow-y-auto w-40 sm:w-64 border-r-2">
-			<Menu/>
+			<MainMenu/>
 			</div>
 	    </div>
 
