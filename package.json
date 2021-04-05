@@ -26,6 +26,7 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"sass": "^1.0.0",
 		"svelte": "^3.37.0",
+		"svelte-fa": "^2.2.0",
 		"svelte-preprocess": "^4.6.9",
 		"tailwindcss": "^2.0.3",
 		"tslib": "^2.0.0",
@@ -37,6 +38,7 @@
 		"node": ">= 12.17.0"
 	},
 	"dependencies": {
+		"@fortawesome/free-solid-svg-icons": "^5.15.3",
 		"svelte-tablesort": "^1.1.0"
 	}
 }
