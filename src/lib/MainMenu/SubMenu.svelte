@@ -1,5 +1,5 @@
 <script>
-    import Fa from 'svelte-fa'
+    import Fa from 'svelte-fa/src/fa.svelte'
     import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
     import { slide } from 'svelte/transition'
     import { tweened } from 'svelte/motion';
