@@ -1,12 +1,24 @@
+@import url('https://rsms.me/inter/inter.css');
+
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+	@supports (font-variation-settings: normal) {
+		html {
+			font-family: 'Inter var', sans-serif;
+		}
+	}
+
+	* {
+		@apply font-sans;
+	}
+
 	h1 {
 		@apply text-2xl;
-		@apply border-b-2;
+		font-weight: 500;
 		@apply mb-2;
 	}
 	h2 {

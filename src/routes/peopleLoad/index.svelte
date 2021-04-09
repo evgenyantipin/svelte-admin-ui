@@ -29,7 +29,7 @@
     setTimeout( async () => { items = await getItems(2)}, 5000 )
 </script>
   
-<h1>People (load)</h1>
+<h1 class="font-sans">People (load)</h1>
 
 
 <div class="flex flex-col">

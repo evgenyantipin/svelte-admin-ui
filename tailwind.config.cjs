@@ -35,6 +35,9 @@ module.exports = {
 				// yellow: colors.amber,
 			},
 		},
+		fontFamily: {
+			sans: ['Inter', 'ui-monospace']
+		}
 	},
 	variants: {
 		extend: {},

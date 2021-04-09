@@ -14,7 +14,7 @@
     export let show = false
 </script>
 
-<p class="cursor-pointer" on:click={() => {
+<p class="cursor-pointer font-medium" on:click={() => {
     show = !show;
     if(show) { 
         rotation.set(0) 

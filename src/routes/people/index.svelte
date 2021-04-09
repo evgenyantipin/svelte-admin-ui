@@ -19,7 +19,6 @@
 </script>
   
 <h1>People</h1>
-<div class="bg-white rounded p-3">
 <TableSort class="min-w-full" {items}>
     <tr class="text-left" slot="thead">
         <th data-sort="name" data-sort-initial>Name</th>
@@ -34,5 +33,4 @@
 </TableSort>
 
 <a href="/people/X">No such id</a>
-</div>
 

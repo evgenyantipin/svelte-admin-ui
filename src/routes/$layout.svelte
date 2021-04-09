@@ -10,7 +10,7 @@
 
 <div id="app" class="h-screen flex flex-col overflow-hidden">
 	<!-- Fixed top nav -->
-	<nav class="h-16 flex flex-none items-center justify-center bg-gray-100 border-b-2">
+	<nav class="h-16 flex flex-none items-center justify-center border-b">
 		<div class="flex-0 flex items-center w-40 h-full sm:w-64 bg-primary-light text-xl">
 			<div class="p-2">test-system</div>
 		</div>
@@ -19,14 +19,14 @@
 	</nav>
 	<div class="flex-1 flex overflow-hidden">
 		<!-- Sidebar -->
-		<div class="flex-0 flex bg-gray-100">
-			<div class="flex-1 overflow-y-auto w-40 sm:w-64 border-r-2">
+		<div class="flex-0 flex">
+			<div class="flex-1 overflow-y-auto w-40 sm:w-64 border-r">
 			<MainMenu/>
 			</div>
 	    </div>
 
 		<!-- Main -->
-		<div class="flex-1 flex bg-gray-100">
+		<div class="flex-1 flex">
 			<div class="px-6 py-4 flex-1 overflow-y-auto">
 				<slot/>
 			</div>
