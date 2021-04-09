@@ -1,5 +1,5 @@
 <script>
-	import "../global.css";
+	import "../global.postcss";
 	import MainMenu from "$lib/MainMenu/MainMenu.svelte";
 
 	import {navigating} from '$app/stores'

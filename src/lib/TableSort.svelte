@@ -94,7 +94,7 @@
     })
 </script>
 
-<style>
+<style lang="scss">
     thead :global(th.sortable) {
         cursor: pointer;
         user-select: none;
@@ -117,3 +117,4 @@
         <slot name="tfoot" />
     </tfoot>
 </table>
+

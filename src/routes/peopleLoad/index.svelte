@@ -30,20 +30,45 @@
 </script>
   
 <h1>People (load)</h1>
-<div class="bg-white rounded p-3">
-<TableSort class="min-w-full" {items}>
-    <tr class="text-left" slot="thead">
-        <th data-sort="name" data-sort-initial>Name</th>
-        <th data-sort="height">Height</th>
-        <th data-sort="birth_year">Birth year</th>
-    </tr>
-    <tr on:click={() => goto(`/peopleLoad/${item.id}`)} class="hover:bg-primary-light cursor-pointer" slot="tbody" let:item>
-        <td >{item.name}</td>
-        <td >{item.height}</td>
-        <td >{item.birth_year}</td>
-    </tr>
-</TableSort>
+
+
+<div class="flex flex-col">
+    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+          <TableSort {items}>
+              <tr slot="thead">
+                <th data-sort="name" data-sort-initial scope="col">
+                  Name
+                </th>
+                <th data-sort="height" scope="col">
+                  Height
+                </th>
+                <th data-sort="birth_year" scope="col">
+                  Birth year
+                </th>
+              </tr>
+              <tr class="hover:bg-primary-light cursor-pointer" slot="tbody" let:item on:click={() => goto(`/peopleLoad/${item.id}`)}>
+                <td>
+                    {item.name}
+                </td>
+                <td>
+                    {item.height}
+                </td>
+                <td>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    {item.birth_year}
+                  </span>
+                </td>
+              </tr>
+  
+              <!-- More items... -->
+            <!-- </tbody> -->
+            </TableSort>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <a href="/peopleLoad/X">No such id</a>
-</div>
 
