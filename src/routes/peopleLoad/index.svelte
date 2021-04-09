@@ -31,11 +31,10 @@
   
 <h1 class="font-sans">People (load)</h1>
 
-
 <div class="flex flex-col">
-    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-      <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+    <div class="-my-2 overflow-x-auto">
+      <div class="py-2 align-middle inline-block min-w-full">
+        <div class="shadow overflow-hidden border border-b-2 border-gray-200 sm:rounded-lg">
           <TableSort {items}>
               <tr slot="thead">
                 <th data-sort="name" data-sort-initial scope="col">
@@ -68,7 +67,5 @@
         </div>
       </div>
     </div>
-  </div>
-
-<a href="/peopleLoad/X">No such id</a>
+</div>
 
