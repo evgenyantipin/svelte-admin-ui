@@ -1,5 +1,8 @@
 <script lang="ts" context="module">
+    const wait = (ms: number) => new Promise( resolve => setTimeout(resolve, ms))
+
     async function getItems(page = 1) {
+        await wait(1000)
         const resp = await fetch(`https://swapi.dev/api/people/?page=${page}`)
         const data = await resp.json()
         const items = data.results
