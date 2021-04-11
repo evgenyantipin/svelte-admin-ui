@@ -1,6 +1,15 @@
+<script lang="ts">
+	import {notifyInfo} from '$lib/notifications'
+
+	function addNotification() {
+		notifyInfo('Hello')
+	}
+</script>
+
 <main>
     <h1>Test</h1>
     <a href="/">Index</a>
+	<a on:click={addNotification} href="#">Notify</a>
 </main>
 
 <style lang="scss">
