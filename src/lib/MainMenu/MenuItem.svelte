@@ -3,7 +3,7 @@
 
     export let title
     export let path
-    export let re
+    export let re = undefined
     let reAuto: RegExp
     $: reAuto = re ? re : new RegExp(`^${path}\\b`)
 </script>
