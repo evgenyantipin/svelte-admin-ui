@@ -1,6 +1,6 @@
 <script lang="ts" context="module">
 export async function load({page, fetch}) {
-    const res = await fetch(`https://swapi.dev/api/people/${page.params.id}/`)
+    const res = await fetch(`https://swapi.py4e.com/api/people/${page.params.id}/`)
     if(res.ok) {
         const item = await res.json()
         return {

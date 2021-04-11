@@ -3,7 +3,7 @@
 
     async function getItems(page = 1) {
         await wait(1000)
-        const resp = await fetch(`https://swapi.dev/api/people/?page=${page}`)
+        const resp = await fetch(`https://swapi.py4e.com/api/people/?page=${page}`)
         const data = await resp.json()
         const items = data.results
         items.forEach( item => {
