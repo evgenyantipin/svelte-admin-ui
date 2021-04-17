@@ -23,7 +23,7 @@
 				<div class="p-2">test-system</div>
 			</div>
 	
-	<div class="flex-grow p-2 text-xl"><Notifications /></div>
+			<div class="flex-grow p-2"></div>
 			<div class="flex-0 p-3 bg-green-500 mr-3 rounded">Test</div>
 		</nav>
 		<div class="flex-1 flex overflow-hidden">
@@ -51,5 +51,5 @@
 				</div>
 			</div>
 		</div>
-	  
+		<Notifications />
 	  </div>	
