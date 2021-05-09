@@ -1,35 +1,31 @@
-const sveltePreprocess = require('svelte-preprocess');
-const node = require('@sveltejs/adapter-node');
-const static = require('@sveltejs/adapter-static');
-const pkg = require('./package.json');
+import sveltePreprocess from 'svelte-preprocess';
+// import node from '@sveltejs/adapter-node';
+import xstatic from '@sveltejs/adapter-static';
+// import pkg from './package.json';
 
 /** @type {import('@sveltejs/kit').Config} */
-module.exports = {
+const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: [
 		sveltePreprocess({
 			defaults: {
-				style: "postcss",
+				style: 'postcss'
 			},
 			postcss: true
-		}),
+		})
 	],
 	kit: {
 		// adapter: node(),
-		adapter: static({
+		adapter: xstatic({
 			fallback: '404.html'
 		}),
 
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 
-		ssr: false,
-
-		vite: {
-			ssr: {
-				noExternal: Object.keys(pkg.dependencies || {})
-			}
-		}
+		ssr: false
 	}
 };
+
+export default config;

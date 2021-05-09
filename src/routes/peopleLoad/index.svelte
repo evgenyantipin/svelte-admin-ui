@@ -70,5 +70,5 @@
         </div>
       </div>
     </div>
+    <a href="#" on:click={() => goto('/peopleLoad/unknown')}>Unknown id</a>
 </div>
-

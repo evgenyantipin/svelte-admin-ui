@@ -9,9 +9,9 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-node": "1.0.0-next.16",
-		"@sveltejs/adapter-static": "^1.0.0-next.5",
-		"@sveltejs/kit": "1.0.0-next.87",
+		"@sveltejs/adapter-node": "1.0.0-next.19",
+		"@sveltejs/adapter-static": "^1.0.0-next.9",
+		"@sveltejs/kit": "1.0.0-next.102",
 		"@tailwindcss/jit": "^0.1.18",
 		"@typescript-eslint/eslint-plugin": "^4.21.0",
 		"@typescript-eslint/parser": "^4.21.0",
@@ -25,7 +25,7 @@
 		"prettier": "~2.2.1",
 		"prettier-plugin-svelte": "^2.2.0",
 		"sass": "^1.0.0",
-		"svelte": "^3.37.0",
+		"svelte": "^3.38.2",
 		"svelte-fa": "^2.2.0",
 		"svelte-preprocess": "^4.7.0",
 		"tailwindcss": "^2.0.4",
